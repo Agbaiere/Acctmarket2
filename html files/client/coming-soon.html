@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Site keywords here" />
+    <meta name="description" content="#" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Site Title -->
+    <title>Zomur - Modern Bootstrap Dashboard Template</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!--  Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <link rel="stylesheet" href="css/font-awesome-all.min.css" />
+    <link rel="stylesheet" href="css/charts.min.css" />
+    <link rel="stylesheet" href="css/datatables.min.css" />
+    <link rel="stylesheet" href="css/fancy-box.min.css" />
+    <link rel="stylesheet" href="css/nice-select.min.css" />
+    <link rel="stylesheet" href="css/pikaday.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="crancy-dark-light">
+    <div class="crancy-body-area">
+      <div
+        class="crancy-coming-soon crancy-bg-cover"
+        style="background-image: url('img/comming-soon.jpg')"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="crancy-coming-soon__inside crancy-flex__column-center text-center"
+              >
+                <!-- Coming Soon Content -->
+                <div class="crancy-coming-soon__content">
+                  <h2 class="crancy-coming-soon__title">We are coming soon</h2>
+                  <p class="crancy-coming-soon__text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry`s standard dummy text ever since the
+                    1500s,
+                  </p>
+                </div>
+                <div
+                  class="crancy-countdown"
+                  id="crancy_countdown"
+                  data-countdown="2025/01/01"
+                ></div>
+                <!-- Coming Soon Form -->
+                <form class="crancy-coming-soon__form" action="#">
+                  <h4 class="crancy-coming-soon__form-label">
+                    Subscribe Newsletter
+                  </h4>
+                  <div class="crancy-coming-soon__form-inner">
+                    <input type="email" placeholder="Enter your e-mail" />
+                    <button class="crancy-btn" type="submit">Subscribe</button>
+                  </div>
+                </form>
+                <!-- Coming Soon Form -->
+                <ul class="crancy-coming-soon__slist m-0">
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-skype"></i></a>
+                  </li>
+                </ul>
+                <div class="crancy-coming-soon__button">
+                  <a class="crancy-btn" href="index.html">Go Back</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/final-countdown.min.js"></script>
+    <script src="js/fancy-box.min.js"></script>
+    <!-- <script src="js/fullcalendar.min.js"></script> -->
+    <!-- <script src="js/datatables.min.js"></script> -->
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/pikaday.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("[data-countdown]").each(function () {
+          var $this = $(this);
+          var targetDate = $this.data("countdown");
+
+          $this.countdown(targetDate, function (event) {
+            $this.html(
+              event.strftime(
+                '<span class="crancy-countodwn-single"><span class="fc-count">%D</span><span class="fc-title">DAYS</span></span> ' +
+                  '<span class="crancy-countodwn-single-dot"></span>' +
+                  '<span class="crancy-countodwn-single"><span class="fc-count">%H</span><span class="fc-title">HOURS</span></span>' +
+                  '<span class="crancy-countodwn-single-dot"></span>' +
+                  '<span class="crancy-countodwn-single"><span class="fc-count">%M</span><span class="fc-title">MINUTES</span></span>' +
+                  '<span class="crancy-countodwn-single-dot"></span>' +
+                  '<span class="crancy-countodwn-single"><span class="fc-count">%S</span><span class="fc-title">SECONDS</span></span>'
+              )
+            );
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

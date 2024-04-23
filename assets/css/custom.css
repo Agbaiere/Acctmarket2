@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box
+}
+.custom-font-color {
+    color: #fff;
+}
+.custom-main-color{
+    background-color: #021F59;
+    color: #fff;
+}
+.custom-main-color1 button {
+    background-color: #021F59;
+}
+.custom-main-color2 button {
+    border: 1px solid #021F59;
+    color: #021F59;
+}
+.custom-main-color3 button {
+    border: 1px solid #021F59;
+    background-color: #021F59;
+    color: #fff;
+}
+.custom-main-color3 button:hover {
+    border: 1px solid #021F59;
+    background-color: #0d3584;
+    color: #fff;
+}
+.product-border {
+    border: 1px solid #021F59;
+}
+.custom-main-color2 button:hover{
+    background-color: #021F59;
+    color: #fff;
+}
+.custom-height {
+    height: 140vh;
+}
+.custom-hamburger i {
+    color: #fff;
+}
+.custom-break {
+    height: 7vh;
+}
+.custom-font-color-blue i{
+    color: #138AFE;
+}
+.icon-size {
+    font-size: 20px;
+}
+.custom-width{
+    width: 100%;
+}
+
+.my-div {
+    /* Default color for all screens */
+    background-color: #FFF;
+    width: 100%;
+}
+.my-width {
+    width: 100%;
+}
+
+.my-width2 {
+    width: ;
+}
+.product-images img{
+    height: 10vh;
+    width: 10vh;
+}
+.product-height{
+    height: 25vh;
+}
+.product-link:hover {
+    color: #FF9900;
+    transition: 0.5s ease;
+}
+.main-header {
+    background-color: #021F59;
+    color: #fff;
+}
+.main-header2 {
+    background-color: #021F59;
+}
+.button1 button {
+    background-color: #021F59;
+    border: 1px solid #021F59;
+    color: #fff;
+}
+.button1 button:hover {
+    background-color: #4089d1;
+    border: 1px solid #4089d1;
+}
+.custom-width2 {
+    width: 99%;
+}
+.custom-margin-top {
+    margin-top: 15vh;
+}
+
+@media only screen and (max-width: 768px) {
+    /* New color for screens smaller than 768px wide */
+    * {
+        font-weight: lighter;
+    }
+    .my-div {
+      width: 100%;
+      background-color: #021F59;
+    }
+    .my-width{
+        width: 100%;
+    }
+    .my-width2 {
+        width: 96%;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 765px) {
+    .hide-div{
+      display: none;
+    }
+}
+  

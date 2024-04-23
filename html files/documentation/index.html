@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Advanced Bootstrap Dashboard</title>
+
+    <!-- fave-icon  -->
+    <link rel="shortcut icon" href="images/fave.png" type="image/png" />
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/jquery.highlight.css" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/scrollbar.css" rel="stylesheet" />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+      <!--Sidebar-->
+      <aside id="sidebar">
+        <!--Toggle Button-->
+        <div class="button-container clearfix">
+          <div class="menu-toggle flaticon-menu10"></div>
+        </div>
+
+        <!--Menu Box-->
+        <div class="menu-box">
+          <!--Logo-->
+          <br />
+          <div class="logo text-right">
+            <a href="#"
+              ><img src="./images/logo.svg" style="width: 200px" alt="logo"
+            /></a>
+          </div>
+
+          <!--Sticky Menu-->
+          <nav class="sticky-menu">
+            <ul>
+              <li class="current">
+                <a href="#introduction"
+                  >Introduction <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#html-structure"
+                  >HTML Structure <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#css-structure"
+                  >CSS Files and Structure
+                  <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#javascript"
+                  >Javascript <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#tutorial"
+                  >Tutorial<span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#sources-credits"
+                  >Sources and Credits <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#support"
+                  >Support <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#free-assetes"
+                  >Free Assetes <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#custom-order"
+                  >Custom order <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="copyright">
+          Copyright &copy;
+          <a href="mailto:Abdur.rohman2003@gmail.com">Zomur</a> 2024
+        </div>
+      </aside>
+
+      <div id="content-section">
+        <!--Introduction Section-->
+        <section class="section introduction" id="introduction">
+          <!-- <div class="sec-title">
+            	<span class="icon fa fa-windows"></span>
+                <h2>Intoduction</h2>
+            </div> -->
+
+          <br />
+          <div class="sec-content">
+            <h2>Zomur</h2>
+            <h3>Advanced Bootstrap Dashboard</h3>
+
+            <div class="separator"></div>
+
+            <strong>Created :</strong> 18/03/2024<br />
+            <strong>By :</strong> quomodotheme<br />
+            <strong>Email :</strong>
+            <a href="mailto:Abdur.rohman2003@gmail.com ">Support Email </a>
+            <br />
+            <strong>Support Forum :</strong>
+            <a href="https://support.quomodosoft.com/support/">Support</a>
+            <br />
+
+            <br />
+            <p>
+              Thank you for purchasing <strong> Zomur </strong> - Advanced
+              Bootstrap Dashboard If you have any questions that are beyond the
+              scope of this help file, please feel free to email, via my user
+              page contact form or put a ticket at Support Center .<br />Thank
+              you so much!
+            </p>
+            <br />
+
+            <h3 class="content-title">Template Features</h3>
+            <br />
+            <ul class="checkbox">
+              <li>Clean & Simple Design</li>
+              <li>Advance Bootstrap 5 Framework</li>
+              <li>Advance Chart JS 3.8.0</li>
+              <li>HTML5 & CSS3</li>
+              <li>CSS3 Animations</li>
+              <li>Fully Responsive Design</li>
+              <li>All files are well commented</li>
+              <li>
+                Crossbrowser Compatible with IE10+, Firefox, Safari, Opera,
+                Chrome
+              </li>
+              <li>Extensive Documentation</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--HTML Structure-->
+        <section class="section html-structure" id="html-structure">
+          <div class="sec-title">
+            <span class="icon fa fa-th-large"></span>
+            <h2>HTML Structure</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3>
+              The html template uses Latest <strong>Bootstrap v5</strong> with
+              valid HTML5 tags. This theme is a responisve layout with 4 column
+              Support column. All of the information in content area is nested
+              within a class and comes with predefined classes.
+            </h3>
+
+            <h3 class="content-title">Basic Grid HTML</h3>
+            <p>
+              For a simple two column layout, create a .container and add the
+              appropriate number of .col-md* columns.
+            </p>
+            <p>
+              Given this example, we have .col-md-4 and .col-md-8, making for 12
+              total columns and a complete row.
+            </p>
+            <br />
+            <pre class="code" data-language="html">
+                    <div class="container">
+                        <div class="col-md-4">...</div>
+                        <div class="col-md-8">...</div>
+                    </div>
+                </pre>
+            <br />
+            <h3 class="content-title">Nesting Columns</h3>
+            <!-- /.content-title -->
+            <p>
+              To nest your content with the default grid, add a new .container
+              and set of .col-md* columns within an existing .col-md* column.
+              Nested rows should include a set of columns that add up to the
+              number of columns of its parent.
+            </p>
+            <br />
+            <pre class="code" data-language="html">
+                    <div class="container">
+                        <div class="col-md-9">
+                            Level 1 column
+                            <div class="row">
+                                <div class="col-md-8">Level 2</div>
+                                <div class="col-md-4">Level 2</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            Level 2 column
+                        </div>
+                     </div>
+                    </pre>
+            <!-- /.code -->
+          </div>
+        </section>
+
+        <!--CSS Structure-->
+        <section class="section css-structure" id="css-structure">
+          <div class="sec-title">
+            <span class="icon fa fa-at"></span>
+            <h2>CSS Files and Structure</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3>
+              Mainly two main CSS files are used in this theme. The first one
+              <strong>bootstrap.min.css</strong>, second one is
+              <strong>reset.css</strong> which for this template and to control
+              responsive layouts.
+            </h3>
+            <p>
+              If you would like to edit a specific section of the site, simply
+              find the appropriate label in the CSS file, and then scroll down
+              until you find the appropriate style that needs to be edited.
+            </p>
+            <br />
+            <p>
+              These are the css files that are loaded into templates in top of
+              all page header file labled as <b>preset css</b>.
+            </p>
+            <br />
+            <pre class="code" data-language="css">
+
+                        <!--  Stylesheet -->
+                        <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- slick slider  -->
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <!-- font Awesome icon  -->
+    <link rel="stylesheet" href="css/font-awesome-all.min.css" />
+    <!-- chart js  -->
+    <link rel="stylesheet" href="css/charts.min.css" />
+    <!-- data  -->
+    <link rel="stylesheet" href="css/datatables.min.css" />
+    <!-- ui style  -->
+    <link rel="stylesheet" href="css/fancy-box.min.css" />
+    <!-- select box  -->
+    <link rel="stylesheet" href="css/nice-select.min.css" />
+    <!-- date picker  -->
+    <link rel="stylesheet" href="css/pikaday.min.css" />
+    <!-- theme designe  -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+                </pre>
+            <!-- /.code -->
+
+            <br />
+            <h3 class="content-title">Fonts</h3>
+
+            <p>
+              By default, the template loads this font from Google Web Font
+              Services, you can change the font with the one that suits you
+              best.
+            </p>
+            <br />
+            <pre class="code" data-language="css">
+
+            <!-- Google Fonts -->
+            @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap")
+
+                </pre>
+            <!-- /.code -->
+          </div>
+        </section>
+
+        <!--Javascript-->
+        <section class="section javascript" id="javascript">
+          <div class="sec-title">
+            <span class="icon fa fa-code"></span>
+            <h2>Jquery and javascript</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3>This theme imports three types of Javascript files.</h3>
+            <ul>
+              <li>jQuery</li>
+              <li>Custom scripts <strong>(main.js)</strong></li>
+              <li>Some plugins</li>
+              <br />
+              <li>
+                <strong>jQuery</strong> is a Javascript library that greatly
+                reduces the amount of code that you must write.
+              </li>
+              <li>
+                Most of the animation in this site is carried out from the
+                customs scripts. There are a few functions worth looking over.
+              </li>
+            </ul>
+            <br />
+            <p>
+              In addition to the custom scripts, I have implemented few "tried
+              and true" plugins to create the effects. This plugin is packed, so
+              you won't need to manually edit anything in the file. The only
+              necessary thing to know is how to call the method
+            </p>
+            <br />
+            <br />
+            <p>
+              These are the JS files that are loaded into templates in end of
+              the Body Section.
+            </p>
+            <br />
+            <pre class="code" data-language="html">
+                        <script src="js/jquery.min.js"></script>
+                        <script src="js/jquery-migrate.js"></script>
+                        <script src="js/popper.min.js"></script>
+                        <script src="js/bootstrap.min.js"></script>
+                        <script src="js/charts.js"></script>
+                        <script src="js/final-countdown.min.js"></script>
+                        <script src="js/fancy-box.min.js"></script>
+                        <script src="js/fullcalendar.min.js"></script>
+                        <script src="js/datatables.min.js"></script>
+                        <script src="js/circle-progress.min.js"></script>
+                        <script src="js/nice-select.min.js"></script>
+                        <script src="js/pikaday.min.js"></script>
+                        <script src="js/main.js"></script>
+
+                </pre>
+            <!-- /.code -->
+          </div>
+        </section>
+
+        <!--Sources and Credits-->
+        <section class="section tutorial" id="tutorial">
+          <div class="sec-title">
+            <span class="icon fa fa-credit-card"></span>
+            <h2>Tutorial</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3 class="content-title">LOGO</h3>
+            <!-- /.content-title -->
+            <br />
+            <p>
+              Lets start updating the template. Open index.html file and follow
+              the steps.
+            </p>
+            <p>
+              Most of the updates are same for all pages. So will explain once
+              here.
+            </p>
+            <br />
+            <pre class="code" data-language="html">
+                <a class="crancy-logo" href="index.html">
+                    <!-- Logo for Default -->
+                    <img class="crancy-logo__main" src="img/logo.png" alt="#" />
+                    <img
+                      class="crancy-logo__main--dark"
+                      src="img/logo-dark.png"
+                      alt="#"
+                    />
+                    <!-- Logo for Dark Version -->
+                    <img
+                      class="crancy-logo__main--small"
+                      src="img/logo-icon.png"
+                      alt="#"
+                    />
+                    <img
+                      class="crancy-logo__main--small--dark"
+                      src="img/logo-icon-dark.png"
+                      alt="#"
+                    />
+                  </a>
+          </pre>
+            <!-- /.code -->
+
+            <p>
+              Replace "img/logo-icon.png" with your logo image url source or
+              website name .
+            </p>
+            <br />
+
+            <h3 class="content-title">NAVMENU</h3>
+            <!-- /.content-title -->
+            <br />
+            <p>This is the basic structure.</p>
+
+            <pre class="code" data-language="html">
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+   <!-- Nav Menu -->
+   <div class="menu-bar">
+    <ul id="CrancyMenu" class="menu-bar__one crancy-dashboard-menu">
+      <li class="active">
+        <a
+          class="collapsed"
+          href="#!"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-item__dashboard"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                fill="none"
+              >
+                <path
+                  d="M14 21V17C14 14.7909 12.2091 13 10 13C7.79086 13 6 14.7909 6 17V21M19 9.15033V16.9668C19 19.1943 17.2091 21 15 21H5C2.79086 21 1 19.1943 1 16.9668V9.15033C1 7.93937 1.53964 6.7925 2.46986 6.02652L7.46986 1.90935C8.9423 0.696886 11.0577 0.696883 12.5301 1.90935L17.5301 6.02652C18.4604 6.7925 19 7.93937 19 9.15033Z"
+                  stroke="#436CFF"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Dashboards</span></span
+          >
+          <span class="crancy__toggle"></span
+        ></a>
+        <!-- Dropdown Menu -->
+        <div
+          class="collapse crancy__dropdown"
+          id="menu-item__dashboard"
+          data-bs-parent="#CrancyMenu"
+        >
+          <ul class="menu-bar__one-dropdown">
+            <li>
+              <a href="index.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Sales Analysis</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="index-2.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">eCommerce</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="index-3.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Marketing</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="index-4.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Saas Solution</span
+                  ></span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a class="collapsed" href="transaction.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9H14M6 13H14M6 17H10M6 3C6 4.10457 6.89543 5 8 5H12C13.1046 5 14 4.10457 14 3M6 3C6 1.89543 6.89543 1 8 1H12C13.1046 1 14 1.89543 14 3M6 3H5C2.79086 3 1 4.79086 1 7V17C1 19.2091 2.79086 21 5 21H15C17.2091 21 19 19.2091 19 17V7C19 4.79086 17.2091 3 15 3H14"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Transaction</span></span
+          ></a
+        >
+      </li>
+      <li>
+        <a class="collapsed" href="my-wallet.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M2 7C2 4.79086 3.79086 3 6 3H18C20.2091 3 22 4.79086 22 7V17C22 19.2091 20.2091 21 18 21H6C3.79086 21 2 19.2091 2 17V7Z"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 9L22 15H18C16.3431 15 15 13.6569 15 12C15 10.3431 16.3431 9 18 9L22 9Z"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">My Wallet</span></span
+          ></a
+        >
+      </li>
+      <li>
+        <a class="collapsed" href="analytics.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <path
+                  d="M15 10C13.8954 10 13 10.8954 13 12V14C13 15.1046 13.8954 16 15 16C16.1046 16 17 15.1046 17 14V12C17 10.8954 16.1046 10 15 10Z"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M7 6C5.89543 6 5 6.89543 5 8L5 14C5 15.1046 5.89543 16 7 16C8.10457 16 9 15.1046 9 14V8C9 6.89543 8.10457 6 7 6Z"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M1 5C1 2.79086 2.79086 1 5 1H17C19.2091 1 21 2.79086 21 5V17C21 19.2091 19.2091 21 17 21H5C2.79086 21 1 19.2091 1 17V5Z"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Analytics</span></span
+          ></a
+        >
+      </li>
+      <li>
+        <a class="collapsed" href="statistics.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.8025 10.0128C21.0104 6.08419 17.9158 2.98956 13.9872 2.19745C12.9045 1.97914 12 2.89543 12 4V10C12 11.1046 12.8954 12 14 12H20C21.1046 12 22.0209 11.0955 21.8025 10.0128Z"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 4.22314C4.99202 5.1326 2 8.71695 2 13.0001C2 17.9707 6.02944 22.0001 11 22.0001C15.2832 22.0001 18.8675 19.0081 19.777 15.0001"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Statistics</span></span
+          ></a
+        >
+      </li>
+      <li>
+        <a class="collapsed" href="inbox.html">
+          <span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 14H16M8 10H12M21.9664 11.2166C21.9886 11.4748 22 11.7361 22 12C22 16.9706 17.9706 21 13 21H6C3.79086 21 2 19.2091 2 17V12C2 7.02944 6.02944 3 11 3H13C13.2639 3 13.5252 3.01136 13.7834 3.03362M22 6C22 7.65685 20.6569 9 19 9C17.3431 9 16 7.65685 16 6C16 4.34315 17.3431 3 19 3C20.6569 3 22 4.34315 22 6Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Inbox</span>
+          </span>
+          <div class="crancy-menu-group">
+            <span href="#"><img src="img/inbox-edit.svg" /></span>
+            <span href="#"><img src="img/inbox-author.png" /></span>
+            <span class="menu-bar__count crancy-color1__bg">5</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#!"
+          class="collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-item__apps"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                fill="none"
+              >
+                <path
+                  d="M11 4L11 18M11 4C11 2.34315 9.65686 1 8 1L4 1C2.34315 1 1 2.34315 1 4L1 18C1 19.6569 2.34315 21 4 21H8C9.65686 21 11 19.6569 11 18M11 4H12C15.866 4 19 7.13401 19 11C19 14.866 15.866 18 12 18L11 18M11 8H12C13.6569 8 15 9.34315 15 11C15 12.6569 13.6569 14 12 14H11"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">External</span></span
+          >
+          <span class="crancy__toggle"></span
+        ></a>
+        <!-- Dropdown Menu -->
+        <div
+          class="collapse crancy__dropdown"
+          id="menu-item__apps"
+          data-bs-parent="#CrancyMenu"
+        >
+          <ul class="menu-bar__one-dropdown">
+            <li>
+              <a href="user.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Users</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="products.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Products</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="add-product.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Add New Product</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="order-products.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Product Orders</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="customers.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Customers</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="add-customer.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Customer Detail</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="customer-transactions.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Customer Transaction</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="my-task.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">My Task</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="profile-overview.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Profile Overview</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="calendar.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Calendar</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="coming-soon.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Coming Soon</span
+                  ></span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a class="collapsed" href="projects.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 22H5C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H15C16.6569 2 18 3.34315 18 5V8M20 22C18.8954 22 18 21.1046 18 20V8M20 22C21.1046 22 22 21.1046 22 20V10C22 8.89543 21.1046 8 20 8H18M6 7H14M6 12H14M6 17H10"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </span>
+            <span class="menu-bar__name">Project</span></span
+          ></a
+        >
+      </li>
+      <li>
+        <a class="collapsed" href="integrations.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M18 2V6M18 6V10M18 6H14M18 6H22M4 10H8C9.10457 10 10 9.10457 10 8V4C10 2.89543 9.10457 2 8 2H4C2.89543 2 2 2.89543 2 4V8C2 9.10457 2.89543 10 4 10ZM10 18C10 20.2091 8.20914 22 6 22C3.79086 22 2 20.2091 2 18C2 15.7909 3.79086 14 6 14C8.20914 14 10 15.7909 10 18ZM16 22H20C21.1046 22 22 21.1046 22 20V16C22 14.8954 21.1046 14 20 14H16C14.8954 14 14 14.8954 14 16V20C14 21.1046 14.8954 22 16 22Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Integrations</span></span
+          ></a
+        >
+      </li>
+      <li>
+        <a class="collapsed" href="notifications.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="24"
+                viewBox="0 0 20 24"
+                fill="none"
+              >
+                <circle
+                  cx="15.3"
+                  cy="4.3"
+                  r="3.3"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8.77889 3.27627C5.68967 3.74266 3.21907 6.29407 2.8476 9.57327L2.46823 12.9222C2.37397 13.7543 2.03671 14.5374 1.50104 15.1679C0.364295 16.5059 1.28689 18.5998 3.01315 18.5998H16.5869C18.3131 18.5998 19.2357 16.5059 18.099 15.1679C17.5633 14.5374 17.226 13.7543 17.1318 12.9222L16.8811 10.7092"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.1 20.8C12.6196 22.0817 11.3235 23 9.8 23C8.27647 23 6.98035 22.0817 6.5 20.8"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Notifications</span></span
+          ><span class="menu-bar__count crancy-color1__bg">7</span></a
+        >
+      </li>
+      <li>
+        <a
+          href="#!"
+          class="collapsed"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-item__auth"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                width="18"
+                height="22"
+                viewBox="0 0 18 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="8.77778"
+                  cy="17.1111"
+                  rx="7.77778"
+                  ry="3.88889"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="8.77843"
+                  cy="5.44444"
+                  r="4.44444"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">Authentication</span></span
+          >
+          <span class="crancy__toggle"></span
+        ></a>
+        <!-- Dropdown Menu -->
+        <div
+          class="collapse crancy__dropdown"
+          id="menu-item__auth"
+          data-bs-parent="#CrancyMenu"
+        >
+          <ul class="menu-bar__one-dropdown">
+            <li>
+              <a href="login.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Login</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="sign-up.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name">Sign Up</span></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="forget-password.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Forgot Password</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="confirm-password.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Confirm Passowrd</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="changed-password.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Changed Password</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="email-verification.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Email Verification</span
+                  ></span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="password-success.html"
+                ><span class="menu-bar__text"
+                  ><span class="menu-bar__name"
+                    >Success Password</span
+                  ></span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a class="collapsed" href="history.html"
+          ><span class="menu-bar__text">
+            <span class="crancy-menu-icon crancy-svg-icon__v1">
+              <svg
+                class="crancy-svg-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20.5 13.5C20.5 18.1944 16.6944 22 12 22C7.30558 22 3.5 18.1944 3.5 13.5C3.5 8.80558 7.30558 5 12 5C16.6944 5 20.5 8.80558 20.5 13.5Z"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M15 2.41406C14.0463 2.14433 13.04 2 12 2C10.96 2 9.95366 2.14433 9 2.41406"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M13.5 14C13.5 14.8284 12.8284 15.5 12 15.5C11.1716 15.5 10.5 14.8284 10.5 14C10.5 13.1716 11.1716 12.5 12 12.5C12.8284 12.5 13.5 13.1716 13.5 14Z"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M12 12V9"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="menu-bar__name">History</span></span
+          ></a
+        >
+      </li>
+    </ul>
+  </div>
+  <!-- End Nav Menu -->
+
+</pre>
+            <!-- /.code -->
+
+            <br />
+            <p>
+              Add your own menu item to that ul li item. and if you want to add
+              dropdown menu just make a nesting ul li with class of
+              <b>sub-menu</b>
+            </p>
+
+            <!-- Copyright -->
+          </div>
+        </section>
+
+        <!--Sources and Credits-->
+        <section class="section sources-credits" id="sources-credits">
+          <div class="sec-title">
+            <span class="icon fa fa-credit-card"></span>
+            <h2>Sources and Credits</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3>
+              Fonts Used int the template are google fonts, you can find theme
+              on Google Fonts API
+            </h3>
+
+            <p><strong> Fonts Used are :</strong></p>
+            <p>
+              <a href="https://fonts.google.com/specimen/Quicksand">
+                Quicksand</a
+              >
+            </p>
+
+            <br />
+
+            <p><strong> File Used For Animation Effects :</strong></p>
+            <p>
+              <strong
+                ><a href="https://michalsnik.github.io/aos/" target="_blank"
+                  >aos.js</a
+                ></strong
+              >
+              (cdn link)
+            </p>
+
+            <br />
+
+            <p><strong> Plugins Used Are :</strong></p>
+
+            <p>
+              <a
+                href="https://github.com/FortAwesome/Font-Awesome"
+                target="_blank"
+                >Font Awesome</a
+              >
+              (can be located in css folder)
+            </p>
+            <p>
+              <a href="https://github.com/kenwheeler/slick/" target="_blank"
+                >slick slider min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a href="https://www.chartjs.org/docs/latest/" target="_blank"
+                >charts.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a
+                href="https://jqueryniceselect.hernansartorio.com/"
+                target="_blank"
+                >nice-select.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a
+                href="https://hilios.github.io/jQuery.countdown/"
+                target="_blank"
+                >nice-select.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+
+            <p>
+              <a href="https://getbootstrap.com/" target="_blank"
+                >bootstrap.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a href="https://github.com/jquery/jquery" target="_blank"
+                >jquery.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a href="https://fullcalendar.io/docs" target="_blank"
+                >fullcalendar.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a href="https://datatables.net/download/" target="_blank">
+                datatables.min.js
+              </a>
+              (can be located in js folder)
+            </p>
+            <p>
+              <a
+                href="https://tigrr.github.io/circle-progress/examples.html"
+                target="_blank"
+                >circle-progress.min.js</a
+              >
+              (can be located in js folder)
+            </p>
+            <p>
+              <a
+                href="https://cdnjs.com/libraries/pikaday/1.6.0"
+                target="_blank"
+              >
+                pikaday.min.js
+              </a>
+              (can be located in js folder)
+            </p>
+
+            Every Code is properly commented for Editing Ease.
+          </div>
+        </section>
+
+        <!--Support-->
+        <section class="section support" id="support">
+          <div class="sec-title">
+            <span class="icon fa fa-support"></span>
+            <h2>Support</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3>
+              Once again, thank you so much for purchasing this theme. As I said
+              at the beginning, I'd be glad to help you if you have any
+              questions relating to this theme. No guarantees, but I'll do my
+              best to assist. If you have any queries, please feel free to
+              contact us at Support Center.
+            </h3>
+            <div class="support-image">
+              <a href="mailto:Abdur.rohman2003@gmail.com"
+                ><img src="images/customer__support.png" alt=""
+              /></a>
+            </div>
+            <br />
+
+            <p>
+              Email Us at :
+              <a href="mailto:Abdur.rohman2003@gmail.com "
+                >Abdur.rohman2003@gmail.com
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <!--Free Assetes-->
+        <section class="section free-assetes" id="free-assetes">
+          <div class="sec-title">
+            <span class="icon fa fa-support"></span>
+            <h2>Free Assetes</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <span>Elements Ready PRO</span>
+            <h2 class="title">
+              Get Elements Ready PRO Plugin –
+              <a target="_blank" href="https://elementsready.com/">Demo Page</a>
+            </h2>
+            <ul>
+              <li>Header Footer Builder</li>
+              <li>Megamenu Builder</li>
+              <li>250+ Ready Sections Presets</li>
+              <li>
+                60+ Premium Widget ( WooCommerce, Give Donation Plugin,
+                Learnpress LMS, Easy Digital Downloads, Contact Forms and Many
+                More )
+              </li>
+            </ul>
+            <p>
+              <span>To get the PRO version for free:</span> Give us 5 Star
+              Rating in Themeforest
+              <a href="https://themeforest.net/user/quomodotheme">HERE</a> &
+              send us the SCREENSHOT at abdur.rohman@gmail.com OR in the support
+              forum
+              <a href="https://support.quomodosoft.com/support/">HERE</a> .
+            </p>
+            <div class="thumb">
+              <img src="images/Elements__Ready__Thumb.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!--Free Assetes-->
+        <section class="section custom-order" id="custom-order">
+          <div class="sec-title">
+            <span class="icon fa fa-support"></span>
+            <h2>Custom Order</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <p>
+              For any custom order (web ui design, app design, HTML template
+              Development, WordPress Theme Development or WordPress Plugin
+              Development) please contact us
+            </p>
+            <br />
+            <div class="thumb">
+              <a href="mailto:Abdur.rohman2003@gmail.com"
+                ><img src="images/custom__order.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--End pagewrapper-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/prism.js"></script>
+
+    <script src="js/jquery.highlight.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

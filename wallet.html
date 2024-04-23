@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- title starts here -->
+    <title>AcctMarket</title>
+</head>
+<body>
+    <div class="row  my-width">
+      <div class="col-lg-3 position-fixed  d-none d-lg-block custom-main-color custom-height  ms-0 p-0">
+            <nav class="s-1 mt-5 ">
+              <div class="logo p-2 ps-4 mb-3">
+                <a href="" class="nav-link">
+                  <img src="assets/images/logo/Acctmarket.png" alt="" style="height: 30px; width: 20vh;">
+                </a>
+              </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-font-color ">
+                    <li class="nav-item mb-3 p-2 ps-4">
+                      <a class="nav-link active " aria-current="page" href="home.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="ms-2">Home</span>
+                    </a>
+                    </li>
+                    <li class="nav-item mb-3 p-2 ps-4">
+                      <a class="nav-link" href="products.html">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="ms-2">Product</span>
+                    </a>
+                    </li>
+                    <li class="nav-item mb-3 p-2 ps-4">
+                        <a class="nav-link" href="top-up.html">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span class="ms-2">Topup Balance</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3 p-2 ps-4">
+                        <a class="nav-link " href="notification.html">
+                            <i class="fa-solid fa-bell"></i> 
+                            <span class="ms-2">Notification</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3 p-2 ps-4">
+                        <a class="nav-link" href="carts.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="ms-2">Carts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-3 p-2 ps-4">
+                      <a class="nav-link" href="html files/client/index-2.html">
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span class="ms-2">Admin</span>
+                      </a>
+                    </li>
+                    <li class="nav-item p-2 ps-4">
+                        <a class="nav-link" href="transactions.html">
+                            <i class="fa-solid fa-receipt"></i>
+                            <span class="ms-2">Transaction</span>
+                        </a>
+                    </li><br>
+                    <div class="custom-break"><br></div>
+                    <li class="nav-item p-2 ps-4">
+                        <a href="" class="nav-link">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="ms-2">Logout</span>
+                          </a>
+                    </li>
+                  </ul>
+            </nav>
+      </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9  col-12  ">
+        <div class="my-div m-0 ">
+          <div class="row m-o pt-2  pe-0 ">
+          <!-- off canvas starts here -->
+          <div class="col-lg-2 col-2 m-0    d-lg-none d-sm-block ">
+            <a class="btn custom-main-color custom-hamburger ms-sm-5 mt-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bars  "></i></i>
+            </a>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">.Logo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body p-0">
+                <div>
+                  <div class="col-lg-3  custom-main-color custom-height  ms-0 pt-3 pe-3">
+                    <div class="custom-font-color text-end">
+                      Collins
+                      <img src="assets/images/users/collins.png" class="rounded-circle" alt="..." style="width: 50px; height: 50px;">
+                    </div>
+                    <nav class="nav-underline">
+                        <ul class="navbar-nav mb-2 mb-lg-0 custom-font-color ">
+                          <li class="nav-item mb-3 p-2">
+                            <a class="nav-link " aria-current="page" href="#">
+                              <span class=" mt-0">
+                                <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                  <option selected>Select Country</option>
+                                  <option value="1">🇳🇬 Nigeria</option>
+                                  <option value="2">🇪🇸 Spain</option>
+                                  <option value="3">🇺🇸 USA</option>
+                                </select>
+                              </span>
+                          </a>
+                          </li>
+                            <li class="nav-item mb-3 ">
+                              <a class="nav-link  p-2 ps-5" href="home.html">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="ms-2">Home</span>
+                            </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                              <a class="nav-link p-2 ps-5" href="products.html">
+                                <i class="fa-solid fa-box"></i>
+                                <span class="ms-2">Product</span>
+                            </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link active p-2 ps-5" aria-current="page" href="top-up.html">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span class="ms-2">Topup Balance</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link p-2 ps-5" href="notification.html">
+                                    <i class="fa-solid fa-bell"></i> 
+                                    <span class="ms-2">Notification</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link p-2 ps-5" href="carts.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="ms-2">Carts</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                              <a class="nav-link p-2 ps-5" href="html files/client/index-2.html">
+                                  <i class="fa-solid fa-user-tie"></i>
+                                  <span class="ms-2">Admin</span>
+                              </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                              <a class="nav-link p-2 ps-5" href="orders.html">
+                                  <i class="fa-solid fa-handshake"></i>
+                                  <span class="ms-2">My Order</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 ps-5" href="transactions.html">
+                                    <i class="fa-solid fa-receipt"></i>
+                                    <span class="ms-2">Transaction</span>
+                                </a>
+                            </li><br>
+                            <div class="custom-break"><br></div>
+                            <li class="nav-item">
+                                <a href="" class="nav-link p-2 ps-5">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <span class="ms-2">Logout</span>
+                                  </a>
+                            </li>
+                          </ul>
+                    </nav>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- off canvas ends here -->
+              <div class="col-lg-4  col-6 ms-0 ps-0">
+                <!-- visible for large screen -->
+                  <nav class="navbar ">
+                      <div class="container-fluid custom-main-color2 mt-1">
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2 custom-width" type="search" placeholder="Search Marketplace" aria-label="Search">
+                          <button class="btn btn-outline-success d-none d-sm-block" type="submit">Search</button>
+                        </form>
+                      </div>
+                  </nav>
+              </div>
+              <div class="col-lg-3  pt-2 d-none d-lg-block">
+                <div class="dropdown custom-main-color1 pt-1">
+                  <button class="btn btn-secondary  dropdown-toggle custom-hamburger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="ps-1">Search Category</span>
+                  </button>
+                  <ul class="dropdown-menu custom-font-color-blue">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-facebook"></i>
+                          <span class="ms-2">Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-instagram"></i>
+                          <span class="ms-2">Instagram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span class="ms-2">LinkedIn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+  
+              </div>
+              <div class="col-lg-2 col-2  ps-lg-4 d-none d-lg-block">
+                <div class="custom-font-color">
+                  <span class="">
+                    <div class="dropdown">
+                      <a class="btn border rounded-pill dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/flags/icons8-nigeria-circular-48.png" alt="">
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img src="assets/images/flags/icons8-russian-federation-48 (1).png" alt="">
+                            Russia
+                          </a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img src="assets/images/flags/icons8-spain-flag-48.png" alt="">
+                            Spain
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img src="assets/images/flags/icons8-usa-flag-48.png" alt="">
+                            USA
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn ">
+                      <!-- <img src="assets/images/icons8-nigeria-circular-48.png" alt="">nn -->
+                    </button>
+                  </span>
+                </div>
+                
+              </div>
+              <div class="col-lg-3 col-2">
+                <div class="d-flex flex-row mb-3  p-">
+                  <div class="p-2 custom-main-color1 ms-2  ms-sm-3">
+                    <a href="notification.html">
+                      <button type="button" class="btn  position-relative">
+                        <i class="fa-solid fa-bell custom-font-color"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                          <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="p-2 ps-0  icon-size  custom-main-color1 ms-lg-3" >
+                    <a href="carts.html">
+                      <button type="button" class="btn">
+                        <i class="fa-solid fa-cart-shopping custom-font-color"></i>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="p-2 pt-1 d-none d-md-block ms-lg-3 ms-sm-5">
+                    <img src="assets/images/users/collins.png" class="rounded-circle" alt="..." style="width: 50px; height: 50px;">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+            <div>
+              <div class="row g-0 text-center">
+                <div class="col-sm-6 col-md-8">hty</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+              </div>
+            </div>
+      </div>
+    </div>
+</body>
+<script src="assets/js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/8817b16fc8.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,3316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- title starts here -->
+    <title>AcctMarket</title>
+</head>
+<body>
+    <div class="row  my-width">
+      <div class="col-lg-3 position-fixed d-none d-lg-block custom-main-color custom-height  ms-0 p-0">
+        <nav class="s-1 mt-5">
+          <div class="logo p-2 ps-4 mb-3">
+            <a href="" class="nav-link">
+              <img src="assets/images/logo/Acctmarket.png" alt="" style="height: 30px; width: 20vh;">
+            </a>
+          </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-font-color nav-underline">
+                <li class="nav-item mb-2">
+                  <a class="nav-link p-2 ps-4"  href="home.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="ms-2">Home</span>
+                </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link active p-2 ps-4" aria-current="page" href="products.html">
+                    <i class="fa-solid fa-box"></i>
+                    <span class="ms-2">Product</span>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link p-2 ps-4" href="top-up.html">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span class="ms-2">Topup Balance</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link p-2 ps-4" href="notification.html">
+                        <i class="fa-solid fa-bell"></i> 
+                        <span class="ms-2">Notification</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link p-2 ps-4" href="carts.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="ms-2">Carts</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link p-2 ps-4" href="html files/client/index-2.html">
+                      <i class="fa-solid fa-user-tie"></i>
+                      <span class="ms-2">Admin</span>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link p-2 ps-4" href="orders.html">
+                      <i class="fa-solid fa-handshake"></i>
+                      <span class="ms-2">My Order</span>
+                  </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link p-2 ps-4" href="transactions.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span class="ms-2">Transaction</span>
+                    </a>
+                </li><br>
+                <div class="custom-break"><br></div>
+                <li class="nav-item p-2">
+                    <a href="" class="nav-link  ps-4">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span class="ms-2">Logout</span>
+                      </a>
+                </li>
+              </ul>
+        </nav>
+      </div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9  col-12  ">
+        <div class="my-div m-0 ">
+          <div class="row m-o pt-2  pe-0 ">
+          <!-- off canvas starts here -->
+          <div class="col-lg-2 col-2 m-0    d-lg-none d-sm-block ">
+            <a class="btn custom-main-color custom-hamburger ms-sm-5 mt-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bars  "></i></i>
+            </a>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">.Logo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body p-0">
+                <div>
+                  <div class="col-lg-3  custom-main-color custom-height  ms-0 pt-3 pe-3">
+                    <div class="custom-font-color text-end">
+                      Collins
+                      <img src="assets/images/users/collins.png" class="rounded-circle" alt="..." style="width: 50px; height: 50px;">
+                    </div>
+                    <nav class="nav-underline">
+                        <ul class="navbar-nav mb-2 mb-lg-0 custom-font-color ">
+                          <li class="nav-item mb-3 p-2">
+                            <a class="nav-link " aria-current="page" href="#">
+                              <span class=" mt-0">
+                                <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                  <option selected>Select Country</option>
+                                  <option value="1">🇳🇬 Nigeria</option>
+                                  <option value="2">🇪🇸 Spain</option>
+                                  <option value="3">🇺🇸 USA</option>
+                                </select>
+                              </span>
+                          </a>
+                          </li>
+                            <li class="nav-item mb-3 ">
+                              <a class="nav-link p-2 ps-5" href="home.html">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="ms-2">Home</span>
+                            </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                              <a class="nav-link active p-2 ps-5" aria-current="page" href="products.html">
+                                <i class="fa-solid fa-box"></i>
+                                <span class="ms-2">Product</span>
+                            </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link p-2 ps-5" href="top-up.html">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span class="ms-2">Topup Balance</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link p-2 ps-5" href="notification.html">
+                                    <i class="fa-solid fa-bell"></i> 
+                                    <span class="ms-2">Notification</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link p-2 ps-5" href="carts.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="ms-2">Carts</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                              <a class="nav-link p-2 ps-5" href="html files/client/index-2.html">
+                                  <i class="fa-solid fa-user-tie"></i>
+                                  <span class="ms-2">Admin</span>
+                              </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                              <a class="nav-link p-2 ps-5" href="orders.html">
+                                  <i class="fa-solid fa-handshake"></i>
+                                  <span class="ms-2">My Order</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 ps-5" href="transactions.html">
+                                    <i class="fa-solid fa-receipt"></i>
+                                    <span class="ms-2">Transaction</span>
+                                </a>
+                            </li><br>
+                            <div class="custom-break"><br></div>
+                            <li class="nav-item">
+                                <a href="" class="nav-link p-2 ps-5">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <span class="ms-2">Logout</span>
+                                  </a>
+                            </li>
+                          </ul>
+                    </nav>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- off canvas ends here -->
+              <div class="col-lg-4  col-6 ms-0 ps-0">
+                <!-- visible for large screen -->
+                  <nav class="navbar ">
+                      <div class="container-fluid custom-main-color2 mt-1">
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2 custom-width" type="search" placeholder="Search Marketplace" aria-label="Search">
+                          <button class="btn btn-outline-success d-none d-sm-block" type="submit">Search</button>
+                        </form>
+                      </div>
+                  </nav>
+              </div>
+              <div class="col-lg-3  pt-2 d-none d-lg-block">
+                <div class="dropdown custom-main-color1 pt-1">
+                  <button class="btn btn-secondary  dropdown-toggle custom-hamburger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="ps-1">Search Category</span>
+                  </button>
+                  <ul class="dropdown-menu custom-font-color-blue">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-facebook"></i>
+                          <span class="ms-2">Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-instagram"></i>
+                          <span class="ms-2">Instagram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                          <i class="fa-brands fa-linkedin"></i>
+                          <span class="ms-2">LinkedIn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+  
+              </div>
+              <div class="col-lg-2 col-2  ps-lg-4 d-none d-lg-block">
+                <div class="custom-font-color">
+                  <span class="">
+                    <div class="dropdown">
+                      <a class="btn border rounded-pill dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/flags/icons8-nigeria-circular-48.png" alt="">
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img src="assets/images/flags/icons8-russian-federation-48 (1).png" alt="">
+                            Russia
+                          </a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img src="assets/images/flags/icons8-spain-flag-48.png" alt="">
+                            Spain
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <img src="assets/images/flags/icons8-usa-flag-48.png" alt="">
+                            USA
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn ">
+                      <!-- <img src="assets/images/icons8-nigeria-circular-48.png" alt="">nn -->
+                    </button>
+                  </span>
+                </div>
+                
+              </div>
+              <div class="col-lg-3 col-2">
+                <div class="d-flex flex-row mb-3  p-">
+                  <div class="p-2 custom-main-color3 ms-2  ms-sm-3">
+                    <a href="notification.html">
+                      <button type="button" class="btn  position-relative">
+                        <i class="fa-solid fa-bell "></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                          <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="p-2 ps-0  icon-size  custom-main-color3 ms-lg-3" >
+                    <a href="carts.html">
+                      <button type="button" class="btn">
+                        <i class="fa-solid fa-cart-shopping custom-font-color"></i>
+                      </button>
+                    </a>
+                  </div>
+                  <div class="d-none d-md-block ms-lg-3 ms-sm-5">
+                    <div class="dropdown">
+                      <a class="btn border rounded-pill dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/users/collins.png" class="rounded-circle" alt="..." style="width: 50px; height: 50px;">
+                      </a>
+                    
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item fw-bold" href="auth/login.html">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                               Login/Sign
+                          </a></li>
+                        <li>
+                          <a class="dropdown-item fw-bold" href="#">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Sign Up
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item fw-bold" href="#">
+                            <i class="fa-solid fa-user"></i>
+                            My Profile
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      <!-- facebook product section starts here  -->
+            <div>
+              <!-- this div starts here -->
+              <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+                <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Facebook Softreg</div>
+                <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+              </div>
+              <!-- this div ends here -->
+              <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+                <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+                  <div class="product-images  col-lg-2 col-md-2 col-3">
+                    <img src="assets/images/products/facebook.png" alt="">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-9">
+                    FB Accounts | Verified by e-mail, there is no email in the set.
+                    Sex can be both male and female. Cookies are included. 
+                    Accounts are registered in IP addresses of different countries.
+                  </div>
+                </div>
+                <!-- for larger screen -->
+                <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+                  <span class="">$6</span>
+                  <span class="ms-5 ps-4 button1">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span class="custom-main-color3">
+                    <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+                  </span>
+                </div>
+                <!-- ends here -->
+                <!-- for smalller screen -->
+                <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+                  <span class="">Price: $6</span>
+                  <span class="ms-5 ps-4">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span>
+                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                  </span>
+                </div>
+              </div>
+              <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+                <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+                  <div class="product-images  col-lg-2 col-md-2 col-3">
+                    <img src="assets/images/products/facebook.png" alt="">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-9">
+                    FB Accounts | Verified by e-mail, there is no email in the set.
+                    Sex can be both male and female. Cookies are included. 
+                    Accounts are registered in IP addresses of different countries.
+                  </div>
+                </div>
+                <!-- for larger screen -->
+                <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+                  <span class="">$6</span>
+                  <span class="ms-5 ps-4 button1">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span class="custom-main-color3">
+                    <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+                  </span>
+                </div>
+                <!-- ends here -->
+                <!-- for smalller screen -->
+                <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+                  <span class="">Price: $6</span>
+                  <span class="ms-5 ps-4">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span>
+                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                  </span>
+                </div>
+              </div>
+              <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+                <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+                  <div class="product-images  col-lg-2 col-md-2 col-3">
+                    <img src="assets/images/products/facebook.png" alt="">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-9">
+                    FB Accounts | Verified by e-mail, there is no email in the set.
+                    Sex can be both male and female. Cookies are included. 
+                    Accounts are registered in IP addresses of different countries.
+                  </div>
+                </div>
+                <!-- for larger screen -->
+                <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+                  <span class="">$6</span>
+                  <span class="ms-5 ps-4 button1 border-0">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span class="custom-main-color3">
+                    <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+                  </span>
+                </div>
+                <!-- ends here -->
+                <!-- for smalller screen -->
+                <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+                  <span class="">Price: $6</span>
+                  <span class="ms-5 ps-4">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span>
+                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                  </span>
+                </div>
+              </div>
+              <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+                <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+                  <div class="product-images  col-lg-2 col-md-2 col-3">
+                    <img src="assets/images/products/facebook.png" alt="">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-9">
+                    FB Accounts | Verified by e-mail, there is no email in the set.
+                    Sex can be both male and female. Cookies are included. 
+                    Accounts are registered in IP addresses of different countries.
+                  </div>
+                </div>
+                <!-- for larger screen -->
+                <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+                  <span class="">$6</span>
+                  <span class="ms-5 ps-4 button1">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span class="custom-main-color3">
+                    <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+                  </span>
+                </div>
+                <!-- ends here -->
+                <!-- for smalller screen -->
+                <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+                  <span class="">Price: $6</span>
+                  <span class="ms-5 ps-4">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span>
+                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                  </span>
+                </div>
+              </div>
+              <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+                <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+                  <div class="product-images  col-lg-2 col-md-2 col-3">
+                    <img src="assets/images/products/facebook.png" alt="">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-9">
+                    FB Accounts | Verified by e-mail, there is no email in the set.
+                    Sex can be both male and female. Cookies are included. 
+                    Accounts are registered in IP addresses of different countries.
+                  </div>
+                </div>
+                <!-- for larger screen -->
+                <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+                  <span class="">$6</span>
+                  <span class="ms-5 ps-4 button1">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span class="custom-main-color3">
+                    <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+                  </span>
+                </div>
+                <!-- ends here -->
+                <!-- for smalller screen -->
+                <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+                  <span class="">Price: $6</span>
+                  <span class="ms-5 ps-4">
+                    <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+                  </span>
+                  <span>
+                    <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+              <div class="col-sm-12 col-md-12  m-2">
+                <a href="facebook-products.html">
+                  <button type="button" class="btn ">See more ...</button>
+                </a>
+              </div>
+            </div>
+      <!-- facebook product section ends here-->
+
+      <!-- Instagram product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Instagram Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/Instagram.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Instagram Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/Instagram.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Instagram Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/instagram.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Instagram Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/Instagram.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Instagram Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/instagram.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Instagram Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="instagram-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- Instagram product section ends here-->
+
+
+<!-- telegram product section starts here  -->
+
+
+
+<div>
+  <!-- this div starts here -->
+  <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+    <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Google Voice</div>
+    <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+  </div>
+  <!-- this div ends here -->
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/google-voice.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Google Voice Accounts | Verified by e-mail, there is email in the set. 
+        Cookies are included. 
+        Accounts are registered in IP addresses of USA
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  </div>
+  <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+    <div class="col-sm-12 col-md-12  m-2">
+      <a href="google-voice-products.html">
+        <button type="button" class="btn ">See more ...</button>
+      </a>
+    </div>
+  </div>
+<!-- google-voice product section ends here -->
+
+<!-- twitter product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Twitter Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitter.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitter Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitter.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitter Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitter.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitter Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitter.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitter Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitter.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitter Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="twitter-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- twitter product section ends here-->
+
+
+<!-- tittok product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Tik Tok  Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/tittok.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Tiktok Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/tittok.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Tiktok Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/tittok.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Tiktok Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/tittok.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Tittok Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/tittok.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Tiktok Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="tiktok-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- tittok product section ends here-->
+
+<!-- hbomax section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Hbo Max Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/hbomax.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Hbo Max Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/hbomax.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Hbo Max Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/hbomax.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Hbo Max Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/hbomax.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Hbo Max Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/hbomax.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Hbo Max Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="hbo-max-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- hbo max product section ends here-->
+
+
+<!-- disney product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Disney Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/disney.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Disney Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/disney.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Disney Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/disney.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Disney Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/disney.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Disney Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/disney.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Disney Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="disney-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- disney product section ends here-->
+
+
+
+<!-- linkedin product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">LinkedIn Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/linkedin.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              LinkedIn Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/linkedin.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              LinkedIn Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/linkedin.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              LinkedIn Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/linkedin.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              LinkedIn Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/linkedin.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              LinkedIn Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="linkedin-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- linkedin product section ends here-->
+
+
+
+<!-- gmail product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Gmail Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/gmail.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Gmail Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/gmail.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Gmail Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/gmail.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Gmail Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/gmail.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Gmail Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/gmail.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Gmail Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="gmail-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- gmail product section ends here-->
+
+
+
+<!-- twitch product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Twitch Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitch.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitch Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitch.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitch Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitch.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitch Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitch.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitch Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/twitch.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Twitch Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="twitch-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- twitch product section ends here-->
+
+
+<!-- amazon product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Amazon Account</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/amazon.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Amazon Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/amazon.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Amazon Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/amazon.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Amazon Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/amazon.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Amazon Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/amazon.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Amazon Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="amazon-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- amazon product section ends here-->
+
+
+<!-- aliexpress product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Aliexpress Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/aliexpress.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Aliexpress Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/aliexpress.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Aliexpress Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/aliexpress.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Aliexpress Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/aliexpress.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Aliexpress Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/aliexpress.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Aliexpress Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="twitter-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- aliexpress product section ends here-->
+
+
+
+<!-- etsy product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Etsy Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/etsy.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Etsy Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/etsy.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Etsy Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/etsy.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Etsy Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/etsy.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Etsy Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/etsy.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Etsy Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="etsy-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- etsy product section ends here-->
+
+
+
+<!-- ebay product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Ebay Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/ebay.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Ebay Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/ebay.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Ebay Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/ebay.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Ebay Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/ebay.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Ebay Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/ebay.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Ebay Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="ebay-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- ebay product section ends here-->
+
+
+
+<!-- textnow product section starts here  -->
+      <div>
+        <!-- this div starts here -->
+        <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+          <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Text Now Accounts</div>
+          <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+        </div>
+        <!-- this div ends here -->
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/textnow.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Text Now Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/textnow.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Text Now Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/textnow.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Text Now Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1 border-0">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/textnow.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Text Now Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+        <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+          <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+            <div class="product-images  col-lg-2 col-md-2 col-3">
+              <img src="assets/images/products/textnow.png" alt="">
+            </div>
+            <div class="col-lg-10 col-md-10 col-9">
+              Text Now Accounts | Verified by e-mail, there is no email in the set.
+              Sex can be both male and female. Cookies are included. 
+              Accounts are registered in IP addresses of different countries.
+            </div>
+          </div>
+          <!-- for larger screen -->
+          <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+            <span class="">$6</span>
+            <span class="ms-5 ps-4 button1">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span class="custom-main-color3">
+              <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+            </span>
+          </div>
+          <!-- ends here -->
+          <!-- for smalller screen -->
+          <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+            <span class="">Price: $6</span>
+            <span class="ms-5 ps-4">
+              <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+            </span>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+        <div class="col-sm-12 col-md-12  m-2">
+          <a href="textnow-products.html">
+            <button type="button" class="btn ">See more ...</button>
+          </a>
+        </div>
+      </div>
+<!-- textnow product section ends here-->
+
+
+
+<!-- apple product section starts here  -->
+<div>
+  <!-- this div starts here -->
+  <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+    <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Apple Accounts</div>
+    <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+  </div>
+  <!-- this div ends here -->
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/apple.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Apple Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/apple.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Apple Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/apple.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Apple Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1 border-0">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/apple.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Apple Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/apple.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Apple Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+  <div class="col-sm-12 col-md-12  m-2">
+    <a href="apple-products.html">
+      <button type="button" class="btn ">See more ...</button>
+    </a>
+  </div>
+</div>
+<!-- apple product section ends here-->
+
+
+
+
+
+<!-- textnow product section starts here  -->
+<div>
+  <!-- this div starts here -->
+  <div class="row g-0 text-start main-header my- mx-2 rounded-2 mt-2">
+    <div class="col-sm-4 col-md-6 bprder col-11 ms-2 main-header p-3 my- rounded-2 fw-bolder ">Snapchat Accounts</div>
+    <div class="col-6  col-sm-4 col-md-5   p-3 main-header rounded-2 d-none d-sm-block fw-bolder">Price</div>
+  </div>
+  <!-- this div ends here -->
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/snapchat.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Snapchat Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/snapchat.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Snapchat Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/snapchat.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Snapchat Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1 border-0">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/snapchat.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Snapchat Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 border rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 border rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+  <div class="row g-0 text-start bg-primary-subtle mx-2 rounded-2 mt-1">
+    <div class="col-sm-6 col-sm-5 col-md-6 row ms-2  p-3 my- rounded-2">
+      <div class="product-images  col-lg-2 col-md-2 col-3">
+        <img src="assets/images/products/snapchat.png" alt="">
+      </div>
+      <div class="col-lg-10 col-md-10 col-9">
+        Snapchat Accounts | Verified by e-mail, there is no email in the set.
+        Sex can be both male and female. Cookies are included. 
+        Accounts are registered in IP addresses of different countries.
+      </div>
+    </div>
+    <!-- for larger screen -->
+    <div class="col-6 col-md-5 col-sm-5 p-3 rounded-2 d-none d-sm-block " >
+      <span class="">$6</span>
+      <span class="ms-5 ps-4 button1">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span class="custom-main-color3">
+        <button type="button" class="btn btn-sm ms-2 ">Add to Cart</button>
+      </span>
+    </div>
+    <!-- ends here -->
+    <!-- for smalller screen -->
+    <div class="col-12  p-3 rounded-2 d-block d-md-none " >
+      <span class="">Price: $6</span>
+      <span class="ms-5 ps-4">
+        <button type="button" class="btn btn-primary btn-sm">Buy Now</button>
+      </span>
+      <span>
+        <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+      </span>
+    </div>
+  </div>
+</div>
+<div class="row g-0 text-center product-border mx-2 mt-2 rounded-2">
+  <div class="col-sm-12 col-md-12  m-2">
+    <a href="snapchat-products.html">
+      <button type="button" class="btn ">See more ...</button>
+    </a>
+  </div>
+</div>
+<!-- textnow product section ends here-->
+
+
+      </div>
+    </div>
+</body>
+<script src="assets/js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/8817b16fc8.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
